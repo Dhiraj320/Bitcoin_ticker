@@ -1,3 +1,4 @@
+//2. Import the required packages
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
@@ -31,9 +32,11 @@ const coinAPIURL = 'https://rest.coinapi.io/v1/exchangerate';
 const apiKey = '4544B577-B95A-40CC-BC30-BA32BF7FBFB2';
 
 class CoinData {
+  //TODO 3: Update getCoinData to take the selectedCurrency as an input.
   Future getCoinData(String selectedCurrency) async {
     Map<String, String> cryptoPrices = {};
     for (String crypto in cryptoList) {
+       //TODO 4: Update the URL to use the selectedCurrency input.
       var url = Uri.parse(
           "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=4544B577-B95A-40CC-BC30-BA32BF7FBFB2");
       http.Response response = await http.get(url);
