@@ -29,7 +29,7 @@ const List<String> currenciesList = [
 const List<String> cryptoList = ['BTC', 'ETH', 'LTC'];
 
 const coinAPIURL = 'https://rest.coinapi.io/v1/exchangerate';
-const apiKey = '4544B577-B95A-40CC-BC30-BA32BF7FBFB2';
+const apiKey = ' 27D29E0B-5618-4A2C-8559-BBE6707E3A9E';
 
 class CoinData {
   //TODO 3: Update getCoinData to take the selectedCurrency as an input.
@@ -38,7 +38,7 @@ class CoinData {
     for (String crypto in cryptoList) {
        //TODO 4: Update the URL to use the selectedCurrency input.
       var url = Uri.parse(
-          "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=4544B577-B95A-40CC-BC30-BA32BF7FBFB2");
+          "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey= 27D29E0B-5618-4A2C-8559-BBE6707E3A9E");
       http.Response response = await http.get(url);
       if (response.statusCode == 200) {
         var decodedData = jsonDecode(response.body);
