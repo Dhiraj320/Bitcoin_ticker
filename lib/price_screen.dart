@@ -82,7 +82,7 @@ class _PriceScreenState extends State<PriceScreen> {
         CryptoCard(
           cryptoCurrency: crypto,
           selectedCurrency: selectedCurrency,
-          value: isWaiting ? '?' : coinValues[crypto].toString(),
+          value: coinValues[crypto].toString(),
         ),
       );
     }
