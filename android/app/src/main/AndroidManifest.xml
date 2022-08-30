@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bictcoin_ticker">
+    <uses-permission android:name="android.permission.INTERNET" />
+    
    <application
         android:label="bictcoin_ticker"
         android:name="${applicationName}"
